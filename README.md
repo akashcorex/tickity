@@ -1,4 +1,4 @@
-# Ticketr - Real-time Event Ticketing Platform
+# Tickity - Real-time Event Ticketing Platform
 
 Ticketr is a modern, real-time event ticketing platform built with Next.js, Convex, Clerk, and Razorpay. It features a sophisticated queue system, real-time updates, secure payment processing, and a beautiful, responsive UI.
 
