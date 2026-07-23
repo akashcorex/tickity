@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
@@ -19,6 +19,10 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export const viewport: Viewport = {
+  themeColor: '#2563eb',
+};
+
 export const metadata: Metadata = {
   title: "Tickity",
   description:
@@ -31,7 +35,7 @@ export const metadata: Metadata = {
     follow: true,
     nocache: false,
   },
-  themeColor: "#2563eb",
+  metadataBase: new URL('https://tickity.com'),
   openGraph: {
     title: "Tickity | Buy & Sell Event Tickets",
     description:
@@ -57,6 +61,7 @@ export const metadata: Metadata = {
     images: ["/logo.png"],
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
